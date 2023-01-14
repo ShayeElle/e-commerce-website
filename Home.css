@@ -144,7 +144,7 @@ section .navigation li img:hover {
     grid-template-columns:300px 300px 300px;
     grid-template-rows: auto;
     padding: 20px;
-    margin: 30px;
+    margin: 40px;
     column-gap: 40px;
     height: 50vh;
    
@@ -163,12 +163,16 @@ section .navigation li img:hover {
 /*---- Motivation Text ----*/
 .motivation {
     color: #fff;
-    display: inline;
+    /* display: inline-block; */
     text-align: center;
-    font-size: 4em;
-    /* padding: 60px; */
-    margin-top: 5%;
-   
+    font-size: 60px;
+    padding: 15%;
+    /* margin: 10%;  */
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+
+  
 }
 
 /*----- Footer -----*/
