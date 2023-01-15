@@ -1,17 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,400&family=Unbounded:wght@400;700&display=swap');
 * {
     box-sizing: border-box;
-    Margin: 5px;
+    Margin: 0;
     padding: 0;
     font-family: 'Unbounded', cursive;
+   
 }
 
 body {
     /* background-color: rgb(25, 25, 25); */
-    background: linear-gradient(-45deg, #000000, #171717, #0d1c0d, #042e08);
+    background: linear-gradient(-45deg, #000000, #171717, #4d370d, #b47201);
     background-size: 400% 400%;
     animation: gradient 5s ease infinite;
     height: 200vh;
+    overflow-x: hidden;
 }
 /* Gradient Background */
 
@@ -31,8 +33,6 @@ body {
 .store-name {
     /* min-height: 100vh; */
     width: 100%;
-
-
 }
 
 .store-name h1 {
@@ -70,7 +70,7 @@ nav {
     content:'';
     width: 0%;
     height: 2px;
-    background: #60f92d;
+    background: #ca6f00;
     display: block;
     margin: auto;
     transition:0.5s;
@@ -139,6 +139,7 @@ section .navigation li img:hover {
   text-align: center;
   margin-top: 5%;
   border-style: solid;
+  border-color: #ca6f00;
 }
 .grid-container {
     display: grid;
@@ -146,18 +147,17 @@ section .navigation li img:hover {
     justify-content: center;
     grid-template-columns:300px 300px 300px;
     grid-template-rows: auto;
-    padding: 20px;
-    margin: 40px;
+    margin-top: 40px;
     column-gap: 40px;
     height: 50vh;
-   
-
 }
+
 .grid-item img {
     width: 300px;
     height: 300px;
     text-align: center;
 }
+
 .grid-item {
     padding: 20px;
     color: white;
@@ -165,7 +165,7 @@ section .navigation li img:hover {
 
 /*---- Motivation Text ----*/
 .motivation {
-    color: #fff;
+    color: #ca6f00;
     /* display: inline-block; */
     text-align: center;
     font-size: 60px;
@@ -174,39 +174,86 @@ section .navigation li img:hover {
     display: block;
     margin-left: auto;
     margin-right: auto
-
-  
 }
+
+.learn{
+  position: relative;
+}
+
+.learn img {
+  position: relative;
+  top: 0;
+  left: 0;
+  width:100%;
+  height: 100vh;
+}
+
+.learnText {
+  z-index: 100;
+  position: absolute;
+  color: #ffffff;
+  font-size: 30px;
+  text-align: center;
+  left: auto;
+  top: 0;
+  padding-top: 12px;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-style: solid;
+  width: 100%;
+}
+
+.learn button {
+  height: 40px;
+  width: 200px;
+  margin: 20px;
+  border:none;
+}
+
+.learn button:hover{
+  background-color: #cb7102;
+  color: #fff;
+
+}
+
+
+ 
 
 /*----- Footer -----*/
 footer {
     width: 100%;
     text-align: center;
-    padding: 20px 0;
-    margin-top:80px;
-    color: #fff;
+    padding: 20px 0px;
+    margin: 20px;
+    color: rgb(255, 255, 255);
   }
   
   .signUp{
     display: inline;
+    position: relative;
+    padding: 10px;
+    margin: 20px;
   }
-
+.signUp h2 {
+  color: #cb7102;
+}
   footer h4 {
     font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    margin: 10px;
   }
 
   footer label {
     font-family: 'Open Sans', sans-serif;
-    font-weight: 300;
+    font-weight: 400;
   }
 
-  .footer h3{
-    margin-bottom: 10px;
-    margin-top: 10px;
-    font-size: 50px;
-    position: relative;
+  .followUs {
+    color: #cb7102;
   }
-  
+
+  .followUs {
+    margin: 40px;
+  }
   footer ul {
     list-style-type: none;
     display: inline-flex;
