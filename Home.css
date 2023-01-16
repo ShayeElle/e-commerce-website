@@ -163,6 +163,11 @@ section .navigation li img:hover {
     color: white;
 }
 
+.grid-item p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+}
+
 /*---- Motivation Text ----*/
 .motivation {
     color: #ca6f00;
@@ -200,6 +205,7 @@ section .navigation li img:hover {
   background-color: rgba(0, 0, 0, 0.8);
   border-style: solid;
   width: 100%;
+  border-color: #ca6f00;
 }
 
 .learn button {
@@ -212,7 +218,6 @@ section .navigation li img:hover {
 .learn button:hover{
   background-color: #cb7102;
   color: #fff;
-
 }
 
 
@@ -277,7 +282,6 @@ footer {
   }
 
   .icons:hover{
-    background: #5a1c00;
     transition: .5s;
     cursor: pointer;
   }
