@@ -106,6 +106,12 @@ section video {
   border-style: solid;
   width: 100%;
 }
+
+.heroText h1{
+  color: #ca6f00;
+}
+
+
 /*---- Contact ----*/
 
 .contact{
@@ -242,6 +248,7 @@ footer {
 .signUp input{
   outline: none;
 }
+
 .signUp input[type="submit"]{
   background: #ca6f00;
   color: #fff;

@@ -239,6 +239,19 @@ footer {
     padding: 10px;
     margin: 20px;
   }
+
+.signUp input{
+    outline: none;
+  }
+
+  .signUp input[type="submit"]{
+    background: #ca6f00;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+  }
+  
 .signUp h2 {
   color: #cb7102;
 }
