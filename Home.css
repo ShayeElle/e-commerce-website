@@ -319,20 +319,35 @@ footer {
   * {
     overflow-x: hidden;
 }
-/* nav bar start */
+
 nav {
-    justify-content: space-around;
-    position: relative;
+    /* justify-content: space-around;
+    position: relative; */
     display: flex;
     flex-direction: column;
     font-weight: 200;
+    width: 100vh;
+    justify-content: center;
+    padding: 10px;
     font-size: 10px;
+		text-align: center;
+  
 }
+
 
 .store-name {
     text-align: center;
     font-size: 1em;
     padding-top: 50px;
+}
+
+section .navigation li img {
+  height: 50px;
+  width: 80px;
+}
+
+section .navigation li img:hover {
+  width: 100px;
 }
 
 .mainQuote {
