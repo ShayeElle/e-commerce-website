@@ -286,3 +286,20 @@ a, a:visited {
   transition: .5s;
   cursor: pointer;
 }
+
+
+@media (max-width:991px){
+  .contact{
+    padding: 50px;
+  }
+  .container{
+    flex-direction: column;
+  }
+  .container .contactInfo{
+    margin-bottom: 40px;
+  }
+  .container .contactInfo,
+  .container .contactForm{
+    width: 100%;
+  }
+}
