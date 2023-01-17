@@ -83,13 +83,13 @@ nav {
 section {
   position: relative;
   width: 100%;
-  height: 100vh;
-  margin-bottom: 20%;
+  height: 20%;
+  margin-bottom: 10%;
 }
 section video {
   position: absolute;
   width:100%;
-  height: 60%;
+  height: 150%;
   object-fit: cover;
 }
 
@@ -116,7 +116,6 @@ section video {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: rgba(240, 112, 0, 0.1);
 }
 
 .container {
@@ -191,7 +190,7 @@ color: #ca6f00;
   border: none;
   border-bottom: 2px solid #ca6f00;
   outline: none;
-resize: none;
+  resize: none;
 }
 
 .contactForm .inputBox span{
@@ -239,6 +238,18 @@ footer {
   padding: 10px;
   margin: 20px;
 }
+
+.signUp input{
+  outline: none;
+}
+.signUp input[type="submit"]{
+  background: #ca6f00;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+}
+
 .signUp h2 {
 color: #cb7102;
 }
