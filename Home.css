@@ -85,7 +85,7 @@ nav {
  section {
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 70vh;
 }
 
 section video {
@@ -93,13 +93,13 @@ section video {
     top: 0;
     left: 0;
     width:100%;
-    height: 100%;
+    height: 90%;
     object-fit: cover;
 }
 
 section .navigation {
     position: absolute;
-    bottom: 40px;
+    bottom: 70px;
     left: 50%;
     transform: translate(-50%);
     z-index: 100;
@@ -133,12 +133,23 @@ section .navigation li img:hover {
     opacity: 1;
 }
 
+.mainQuote {
+  z-index: 1;
+  position:absolute;
+  font-size: 20px;
+  top:50%;
+  left:5%;
+  text-align: center;
+  color: #fff;
+}
+
+
 /*---- Recommended Products Grid ----*/
 
 #recProd{
   color:#fff;
   text-align: center;
-  margin-top: 5%;
+  margin-top: 3%;
   border-style: solid;
   border-color: #ca6f00;
 }
@@ -167,6 +178,7 @@ section .navigation li img:hover {
 .grid-item p {
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
+  color:#ca6f00;
 }
 
 /*---- Motivation Text ----*/
@@ -299,3 +311,95 @@ footer {
     transition: .5s;
     cursor: pointer;
   }
+
+/*---- Responsive ----*/
+
+/*--- Small Mobile -----*/
+@media screen and (min-width: 320px) and (max-width: 480px){
+  * {
+    overflow-x: hidden;
+}
+/* nav bar start */
+nav {
+    justify-content: space-around;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    font-weight: 200;
+    font-size: 10px;
+}
+
+.store-name {
+    text-align: center;
+    font-size: 1em;
+    padding-top: 50px;
+}
+
+.mainQuote {
+  position:relative;
+  font-size: 15px;
+  top:0;
+  z-index: 1;
+}
+
+#recProd{
+  color:#fff;
+  text-align: center;
+  margin-top: 5%;
+  border-style: solid;
+  border-color: #ca6f00;
+}
+
+.grid-container {
+  display: flex;
+  flex-direction: column;
+  height: 60%;
+}
+.grid-item img {
+  width: 100px;
+  height: 100px;
+  text-align: center;
+}
+.motivation {
+  font-size: 20px;
+  padding: 15%;
+}
+
+
+.learn img {
+  height: 50vh;
+}
+
+.learnText {
+  font-size: 15px;
+}
+footer {
+  width: 90%;
+  text-align: center;
+  
+}
+
+.signUp{
+  display: inline;
+  position: relative;
+  padding: 10px;
+  margin: 20px;
+}
+
+.signUp input{
+  outline: none;
+  margin-bottom: 5px;
+}
+.followUs {
+  padding: 10px;
+}
+}
+  /* ---------- tablets ----------- */
+@media screen and (min-width: 481px) and (max-width: 768px){
+  * {
+      overflow-x: hidden;
+  }
+}
+
+/*-------- laptops -------  */
+@media screen and (min-width: 769px) and (max-width: 1025px) {}
