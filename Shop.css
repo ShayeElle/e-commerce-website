@@ -147,6 +147,21 @@ button {
     cursor: pointer;
    
 }
+
+button::after {
+  content:'';
+  width: 0%;
+  height: 2px;
+  background: #ca6f00;
+  display: block;
+  margin: auto;
+  transition:0.5s;
+}
+
+button:hover::after {
+  width:100%;  
+}
+
 img {
     width: 200px;
     height: 200px;
